@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet Our Team</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Meet Our Team</h1>
+    <p class="subtitle">The minds behind our success</p>
+  </header>
+
+  <main>
+    <section class="team-grid">
+      <!-- Card 1 -->
+      <div class="team-card">
+        <img src="Assets/Member4.jfif" alt="Team">
+        <h2>Sarah Khan</h2>
+        <p class="role">Frontend Developer</p>
+        <p class="bio">Passionate about clean UI and engaging UX.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button class="view-profile-btn" onclick="openModal('Sarah Khan')">View Profile</button>
+      </div>
+
+      <!-- Repeat cards -->
+      <div class="team-card">
+        <img src="Assets/Project manager pic.jfif" alt="Team Member 2">
+        <h2>Ayaan Mehta</h2>
+        <p class="role">Project Manager</p>
+        <p class="bio">Driving success through agile strategies.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button class="view-profile-btn" onclick="openModal('Ayaan Khan')">View Profile</button>
+      </div>
+
+      <div class="team-card">
+        <img src="Assets/Member2.jfif" alt="Team Member 3">
+        <h2>Priya Singh</h2>
+        <p class="role">UI/UX Designer</p>
+        <p class="bio">Creating user-first design experiences.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button class="view-profile-btn" onclick="openModal('Priya Singh')">View Profile</button>
+      </div>
+
+      <div class="team-card">
+        <img src="Assets/Member3.jfif" alt="Team Member 4">
+        <h2>Alexa </h2>
+        <p class="role">Backend Developer</p>
+        <p class="bio">Loves building scalable APIs and databases.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button class="view-profile-btn" onclick="openModal('Aylish Malik')">View Profile</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-name">Name</h2>
+      <p>More details coming soon!</p>
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <button id="scrollTopBtn">&#8679;</button>
+</body>
+</html>
