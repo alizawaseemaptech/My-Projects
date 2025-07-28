@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare Our Internship Plans</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Compare Our Internship Plans</h1>
+    <p>Choose the right plan for your learning journey</p>
+  </header>
+
+  <div class="toggle-container">
+    <label class="toggle-label">
+      <input type="checkbox" id="pricingToggle" />
+      <span class="slider"></span>
+      <span class="toggle-text">Yearly Pricing</span>
+    </label>
+  </div>
+
+  <div class="table-container">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th>Basic</th>
+          <th class="highlighted">Standard <span class="badge">Most Popular</span></th>
+          <th>Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="price-row">
+          <td>Price</td>
+          <td class="price" data-monthly="$29" data-yearly="$199">$29</td>
+          <td class="price" data-monthly="$49" data-yearly="$349">$49</td>
+          <td class="price" data-monthly="$79" data-yearly="$499">$79</td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td>2 weeks</td>
+          <td>4 weeks</td>
+          <td>6 weeks</td>
+        </tr>
+        <tr>
+          <td>Certificate</td>
+          <td><i class="fa-solid fa-check green"></i></td>
+          <td><i class="fa-solid fa-check green"></i></td>
+          <td><i class="fa-solid fa-check green"></i></td>
+        </tr>
+        <tr>
+          <td>Live Projects</td>
+          <td><i class="fa-solid fa-xmark red"></i></td>
+          <td><i class="fa-solid fa-check green"></i></td>
+          <td><i class="fa-solid fa-check green"></i></td>
+        </tr>
+        <tr>
+          <td>Mentorship Sessions</td>
+          <td><i class="fa-solid fa-xmark red"></i></td>
+          <td><i class="fa-solid fa-check green"></i></td>
+          <td><i class="fa-solid fa-check green"></i></td>
+        </tr>
+        <tr>
+          <td>Resume Review</td>
+          <td><i class="fa-solid fa-xmark red"></i></td>
+          <td><i class="fa-solid fa-xmark red"></i></td>
+          <td><i class="fa-solid fa-check green"></i></td>
+        </tr>
+        <tr class="btn-row">
+          <td></td>
+          <td><button class="btn">Choose Plan</button></td>
+          <td class="highlighted"><button class="btn">Choose Plan</button></td>
+          <td><button class="btn">Choose Plan</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+</body>
+</html>
