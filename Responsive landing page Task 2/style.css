@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+ 
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+ 
+  header {
+    background: #0d47a1;
+    color: #fff;
+    padding: 20px 0;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .navbar a {
+    margin-left: 20px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  .hero {
+    background: linear-gradient(to right, #2196f3, #64b5f6);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .btn {
+    background: #fff;
+    color: #0d47a1;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  .btn:hover {
+    background: #e3f2fd;
+  }
+ 
+  .about {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .about h3 {
+    font-size: 26px;
+    color: #0d47a1;
+    margin-bottom: 15px;
+  }
+  .about p {
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .benefits {
+    background: #f1f1f1;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .benefits h3 {
+    font-size: 26px;
+    color: #0d47a1;
+    margin-bottom: 20px;
+  }
+  .benefits-list {
+    list-style: none;
+  }
+  .benefits-list li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .apply {
+    background: #e3f2fd;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .apply h3 {
+    font-size: 26px;
+    color: #0d47a1;
+    margin-bottom: 10px;
+  }
+  .apply p {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .apply-btn {
+    background: #0d47a1;
+    color: #fff;
+  }
+  .apply-btn:hover {
+    background: #1565c0;
+  }
+ 
+  footer {
+    background: #0d47a1;
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+  }
+  .footer-content p {
+    margin: 5px 0;
+  }
+  .footer-content a {
+    color: #bbdefb;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar a {
+      margin: 10px 0 0;
+    }
+  
+    .hero h2 {
+      font-size: 28px;
+    }
+  
+    .about h3,
+    .benefits h3,
+    .apply h3 {
+      font-size: 22px;
+    }
+  
+    .btn {
+      font-size: 16px;
+    }
+  }
+  
