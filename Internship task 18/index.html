@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <h1>🎓 Certificate Showcase</h1>
+    <p>Recognizing the hard work of our interns</p>
+  </header>
+
+  <!-- Certificates Section -->
+  <section class="gallery">
+
+    <!-- Card 1 -->
+    <div class="card" data-title="Web Development Internship" data-image="assets/Shanzay.jpg">
+      <img src="assets/Shanzay.jpg" alt="Certificate">
+      <h2>Web Development Internship</h2>
+      <p><strong>Intern:</strong> Shanzay Fatima</p>
+      <p><strong>Date:</strong> August 2025</p>
+      <button class="view-btn" title="Click to view certificate">View</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-title="Social Media Marketer Internship" data-image="assets/Hira khan.jpg">
+      <img src="assets/Hira khan.jpg" alt="Certificate">
+      <h2>Social Media Marketer Internship</h2>
+      <p><strong>Intern:</strong> Hira Khan</p>
+      <p><strong>Date:</strong> July 2025</p>
+      <button class="view-btn" title="Click to view certificate">View</button>
+    </div>
+
+    <!-- More cards can be added similarly -->
+    
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption"></div>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
