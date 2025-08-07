@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechGear Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>TechGear Store</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Explore the Latest Tech Products</h2>
+    <p>Find the perfect gadget for your needs.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products" id="products">
+    <h2>Our Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Assets/Smartphone X.jpg" alt="Smartphone">
+        <h3>Smartphone X</h3>
+        <p>High-performance phone with sleek design.</p>
+        <span>$699</span>
+        <button class="details-btn">View Details</button>
+      </div>
+
+      <div class="product-card">
+        <img src="Assets/Laptop pri.jpg" alt="Laptop">
+        <h3>Laptop Pro</h3>
+        <p>Powerful laptop for work and play.</p>
+        <span>$1299</span>
+        <button class="details-btn">View Details</button>
+      </div>
+
+      <div class="product-card">
+        <img src="Assets/Noise-Canceling Headphones.jpg" alt="Headphones">
+        <h3>Noise-Canceling Headphones</h3>
+        <p>Experience sound like never before.</p>
+        <span>$199</span>
+        <button class="details-btn">View Details</button>
+      </div>
+
+      <div class="product-card">
+        <img src="Assets/Smartwatch Z.jpg" alt="Smartwatch">
+        <h3>Smartwatch Z</h3>
+        <p>Stay connected on the go.</p>
+        <span>$249</span>
+        <button class="details-btn">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Have Questions?</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 TechGear Store. All rights reserved.</p>
+    <button id="scrollToTopBtn">↑</button>
+  </footer>
+
+</body>
+</html>
