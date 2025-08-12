@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Logo / About -->
+            <div class="footer-section">
+                <h2 class="logo">CoreTech Innovations</h2>
+                <p>Innovating the future, one step at a time. We create cutting-edge digital experiences that inspire.</p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@coretech.com</p>
+                <p>Phone: +92 300 1234567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+            <p>© <span id="year"></span> CoreTech Innovations. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Scroll-to-Top and Year -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("scrollTopBtn").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
+
+</body>
+</html>

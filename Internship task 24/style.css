@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.testimonial-slider {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    flex: 0 0 100%;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.role {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.review {
+    font-size: 0.95rem;
+    margin: 10px 0;
+}
+
+.stars {
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background: #555;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media (min-width: 768px) {
+    .testimonial-card {
+        flex: 0 0 50%;
+    }
+}
