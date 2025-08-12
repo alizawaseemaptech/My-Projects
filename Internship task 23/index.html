@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Plans</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Choose Your Internship Path</h1>
+    <p>Flexible options designed for every learner — monthly or yearly billing.</p>
+    <div class="toggle">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="billingToggle">
+        <span class="slider"></span>
+      </label>
+      <span>Yearly <small>Save 20%</small></span>
+    </div>
+  </header>
+
+  <!-- Pricing Cards -->
+  <section class="pricing">
+    <div class="card">
+      <h3>Starter</h3>
+      <p class="price" data-month="Free" data-year="Free">Free</p>
+      <ul>
+        <li>Access to 5 modules</li>
+        <li>Community support</li>
+        <li>Basic assignments</li>
+        <li>Email updates</li>
+      </ul>
+      <button class="btn" data-plan="Starter">Get Started</button>
+    </div>
+
+    <div class="card featured">
+      <div class="badge">Most Popular</div>
+      <h3>Pro</h3>
+      <p class="price" data-month="PKR 2,499" data-year="PKR 23,990">PKR 2,499</p>
+      <ul>
+        <li>All Starter features</li>
+        <li>Live mentor sessions</li>
+        <li>Capstone project</li>
+        <li>Certificate</li>
+        <li>Resume review</li>
+      </ul>
+      <button class="btn" data-plan="Pro">Get Started</button>
+    </div>
+
+    <div class="card">
+      <h3>Advanced</h3>
+      <p class="price" data-month="PKR 4,999" data-year="PKR 47,990">PKR 4,999</p>
+      <ul>
+        <li>Pro + 1-on-1 mentorship</li>
+        <li>Private code reviews</li>
+        <li>Interview prep</li>
+        <li>Industry projects</li>
+      </ul>
+      <button class="btn" data-plan="Advanced">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>You selected: <span id="selectedPlan"></span></h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <button type="submit" class="btn">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
